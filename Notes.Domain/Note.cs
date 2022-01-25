@@ -1,9 +1,8 @@
 ﻿using System;
 
-
 namespace Notes.Domain
 {
-    class Note
+    public class Note
     {
         public Guid UserId { get; set; }
         public Guid Id { get; set; }
