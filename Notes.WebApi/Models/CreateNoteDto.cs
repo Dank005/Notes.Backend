@@ -1,11 +1,13 @@
 ﻿using Notes.Application.Notes.Commands.CreateNote;
 using Notes.Application.Common.Mapping;
 using AutoMapper;
+using System.ComponentModel.DataAnnotations;
 
 namespace Notes.WebApi.Models
 {
     public class CreateNoteDto : IMapWith<CreateNoteCommand>
     {
+        [Required]
         public string Title { get; set; }
         public string Details { get; set; }
 
