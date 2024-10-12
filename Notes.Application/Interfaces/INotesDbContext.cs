@@ -12,7 +12,6 @@ namespace Notes.Application.Interfaces
     {
         DbSet<Note> Notes { get; set; }
 
-        Task Remove(Note entity);
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
     }
 }
